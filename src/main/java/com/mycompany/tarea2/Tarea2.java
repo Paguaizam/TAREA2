@@ -3,7 +3,7 @@ package com.mycompany.tarea2;
 
 /**
  *
- * @author Paul Aguaiza-Omar Moreira
+ * @author Paul Aguaiza
  */
 public class Tarea2 {
 
@@ -56,6 +56,31 @@ public class Tarea2 {
         System.out.println("Valor a pagar: "+valorTotalP+" dolares");
         
      //////////////////////////////////////////////////////////////////////////////////////////
+       System.out.println("-------------------------------------------------------------");
+        var Luis=new Empleado();
+        Luis.nombre= "Luis";
+        Luis.anioIngreso=2010;
+        Luis.horasTrabajadas=100;
+        Luis.costoHora=6;
+         System.out.println("Nombre del empleado3 : "+ Luis.nombre +"/" +
+                 " Año de ingreso: "+ Luis.anioIngreso +"/" +" Gana "+ Luis.costoHora
+                    +" por hora " +"/"+ " Trabajo " +Luis.horasTrabajadas+ " horas.");
+         var actualL=1000d;
+        actualL=Luis.calcularIngresos(2022);
+        System.out.println("Ingreso: "+actualL+" dolares");
+        
+        var bonoL=1000d;
+        bonoL=Luis.calcularBonoHorasExtra(100);
+        System.out.println("Bono: "+bonoL+" dolares");
+        
+        var impuestoL=1000d;
+        impuestoL=Luis.calcularImpuesto(500,1000,2000);
+        System.out.println("Impuesto: "+impuestoL+" dolares");
+        
+        var valorTotalL=actualL+bonoL-impuestoL;
+        System.out.println("Valor a pagar: "+valorTotalL+" dolares");
+        
+     //////////////////////////////////////////////////////////////////////   
      
          System.out.println("-------------------------------------------------------------");
         var Mariana=new Empleado();
@@ -63,7 +88,7 @@ public class Tarea2 {
         Mariana.anioIngreso=2020;
         Mariana.horasTrabajadas=200;
         Mariana.costoHora=5;
-         System.out.println("Nombre del empleado3 : "+ Mariana.nombre +"/" +
+         System.out.println("Nombre del empleado4 : "+ Mariana.nombre +"/" +
                  " Año de ingreso: "+ Mariana.anioIngreso +"/" +" Gana "+ Mariana.costoHora
                     +" por hora " +"/"+ " Trabajo " +Mariana.horasTrabajadas+ " horas.");
          var actualM=1000d;
@@ -81,7 +106,29 @@ public class Tarea2 {
         var valorTotalM=actualM+bonoM-impuestoM;
         System.out.println("Valor a pagar: "+valorTotalM+" dolares");
         
+        ///////////////////////////////////////////////////////////////////////////
+        System.out.println("-------------------------------------------------------------");
+        var Carlos=new Empleado();
+        Carlos.nombre= "Carlos";
+        Carlos.anioIngreso=2018;
+        Carlos.horasTrabajadas=150;
+        Carlos.costoHora=8;
+         System.out.println("Nombre del empleado4 : "+ Carlos.nombre +"/" +
+                 " Año de ingreso: "+ Carlos.anioIngreso +"/" +" Gana "+ Carlos.costoHora
+                    +" por hora " +"/"+ " Trabajo " +Carlos.horasTrabajadas+ " horas.");
+         var actualC=1000d;
+        actualC=Carlos.calcularIngresos(2022);
+        System.out.println("Ingreso: "+actualM+" dolares");
         
+        var bonoC=1000d;
+        bonoC=Carlos.calcularBonoHorasExtra(100);
+        System.out.println("Bono: "+bonoC+" dolares");
         
+        var impuestoC=1000d;
+        impuestoC=Carlos.calcularImpuesto(500,1000,2000);
+        System.out.println("Impuesto: "+impuestoC+" dolares");
+        
+        var valorTotalC=actualC+bonoC-impuestoC;
+        System.out.println("Valor a pagar: "+valorTotalC+" dolares");
     }
 }
