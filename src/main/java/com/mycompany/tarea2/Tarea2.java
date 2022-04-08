@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
 
 package com.mycompany.tarea2;
 
 /**
  *
- * @author Paul Aguaiza
+ * @author Paul Aguaiza-Omar Moreira
  */
 public class Tarea2 {
 
@@ -59,6 +55,8 @@ public class Tarea2 {
         var valorTotalP=actualP+bonoP-impuestoP;
         System.out.println("Valor a pagar: "+valorTotalP+" dolares");
         
+     //////////////////////////////////////////////////////////////////////////////////////////
+     
          System.out.println("-------------------------------------------------------------");
         var Mariana=new Empleado();
         Mariana.nombre= "Mariana";
